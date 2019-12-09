@@ -38,3 +38,22 @@ module.exports = class RedisConnection {
         return await this.client.set(key, value);
     }
 }
+
+// module.exports = class CacheManager {
+//     constructor() {
+//         if(config.redis && onfig.redis.enabled)
+//             this.client = asyncRedis.createClient(config.redis.port, config.redis.endpoint);
+//     }
+
+//     async save(key, value) {
+//         if(config.redis && onfig.redis.enabled)
+//             await this.client.set(key, JSON.stringify(value));
+//     }
+
+//     async get(key) {
+//         if(config.redis && onfig.redis.enabled)
+//             return await this.client.get(key);
+//         else
+//             return null;
+//     }
+// }

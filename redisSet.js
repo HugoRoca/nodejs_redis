@@ -1,6 +1,7 @@
 "use strict";
 
-const redisConnection = require("./redis-connection");
+const redisConnection = require("./asyncRedis");
+//const redisConnection = require("./redis-connection");
 const redis = new redisConnection();
 
 (async () => {
